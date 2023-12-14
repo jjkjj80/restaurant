@@ -1,5 +1,6 @@
 import { aboutTest } from "./about";
 import { contactTest } from "./contact";
+import { homepage } from "./home";
 
 
 const cont = document.querySelector('.container');
@@ -30,6 +31,8 @@ const content = document.createElement('div');
 const header = document.createElement('h1');
 const hours = document.createElement('p');
 
+content.classList.add('content')
+
 header.textContent='Header';
 header.classList.add('header')
 content.appendChild(header);
@@ -40,5 +43,7 @@ content.appendChild(hours);
 
 cont.appendChild(content)
 
+//listeners
+homeB.addEventListener('click', homepage);
 
 
