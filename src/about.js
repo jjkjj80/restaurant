@@ -1,7 +1,13 @@
+function aboutPage() {
+    const attach = document.querySelector('.other')
+    const local = document.createElement('p')
 
+    local.textContent='local shop'
 
-function aboutTest() {
-    console.log("about")
+    while (attach.firstChild) {
+        attach.removeChild(attach.firstChild);
+      }
+    attach.appendChild(local)
 }
 
-export {aboutTest}
+export {aboutPage}

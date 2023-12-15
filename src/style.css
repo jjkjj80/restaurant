@@ -1,4 +1,13 @@
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
 .tabcontent {
-    color: red;
-    background-color: red;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 50px;
+    width: 150px;
 }

@@ -1,6 +1,9 @@
 import { aboutTest } from "./about";
 import { contactTest } from "./contact";
 import { homepage } from "./home";
+import { aboutPage } from "./about";
+import { contactPage } from "./contact";
+import css from "./style.css";
 
 
 const cont = document.querySelector('.container');
@@ -24,6 +27,7 @@ contactB.classList.add('tabcontent')
 contactB.textContent='CONTACT'
 tabs.appendChild(contactB);
 
+tabs.classList.add('tabs')
 cont.appendChild(tabs);
 
 //content
@@ -42,8 +46,15 @@ hours.classList.add('hours')
 content.appendChild(hours);
 
 cont.appendChild(content)
+const other = document.createElement('div');
+other.classList.add('other')
+cont.appendChild(other)
 
 //listeners
+
+homepage()
 homeB.addEventListener('click', homepage);
+aboutB.addEventListener('click', aboutPage);
+contactB.addEventListener('click', contactPage)
 
 
